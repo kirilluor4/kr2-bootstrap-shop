@@ -1,0 +1,47 @@
+/* Минимальные правки поверх Bootstrap.
+   Всё основное уже делает Bootstrap-сетка и utility-классы. */
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;          /* минимум — высота окна */
+  display: flex;
+  flex-direction: column;     /* header, nav, main, footer — в колонку */
+  background-color: #221d3f;
+}
+
+main {
+  flex: 1 0 auto;             /* main растягивается и выталкивает футер */
+  padding-bottom: 1rem;
+}
+
+/* Чтобы карточки товаров выглядели аккуратнее */
+.card {
+  border: none;
+  border-radius: 5%
+}
+
+.card_catalog{
+    height:  600px;
+}
+
+/* Небольшой запас снизу для контента над фиксированным футером (если понадобится) */
+
+.photo{
+    height: 300px;
+    width: 100%;
+    border-radius: 10% 
+}
+
+
+.photo_product{
+    height: 100%;
+    width: 100%;
+}
+
+.card-body{
+    height: 550px;
+}
+
